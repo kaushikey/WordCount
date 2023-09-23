@@ -1,0 +1,82 @@
+/* src/FileUpload.css */
+/* Styles for the entire FileUpload component */
+.FileUpload {
+    
+   
+  text-align: center;
+  padding: 20px;
+  display: flex; /* Use flexbox for layout */
+  height: 90vh;
+  background-image: url('./img.jpg');
+}
+
+/* Styles for the left section */
+.left-section {
+  flex: 3; /* Occupy 70% of the screen width */
+  padding: 10px; /* Add padding for spacing */
+}
+
+/* Styles for the right section */
+.right-section {
+  flex: 1; /* Occupy 30% of the screen width */
+  padding: 10px; /* Add padding for spacing */
+}
+
+/* Styles for the "All word count" section */
+.all-word-count-container {
+  max-height: 70vh; /* Set the maximum height to limit the number of visible cards */
+  border: 1px solid #ccc; /* Add a border for visual separation */
+  padding: 5px; /* Add padding for spacing */
+  background-color: #f5f5f5; /* Grey background color */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Styles for the cards inside the container */
+.scroll-container .card {
+  width: 100%; /* Make cards occupy 100% of the container width */
+  margin-bottom: 10px; /* Add margin between cards */
+}
+
+/* Styles for the search input */
+.search-container {
+  margin: 10px 10px;
+}
+
+
+/* Styles for buttons and other elements (you can customize these as needed) */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-left: "10px";
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for the Card component can be added here */
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+  .FileUpload {
+    flex-direction: column; /* Stack children vertically on smaller screens */
+  }
+
+  .left-section,
+  .right-section {
+    flex: auto; /* Reset flex property to occupy available width */
+  }
+}
+.dropdown{
+  margin: auto;
+  width: 50%;
+  position: relative;
+  background-color: azure;
+  padding: 6px 4px;
+  max-width: 170px;
+}
+  
